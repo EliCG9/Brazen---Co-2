@@ -1,0 +1,182 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b0b; 
+    font-family: 'Times New Roman', Times, serif; 
+    color: #c1ffb2;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fda5dd;
+    margin: 0 auto 20px auto;
+    padding: 28px;
+    background-color: #2b1118;
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.slogan h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.introduction {
+    text-align: left;
+    color: #fbd1e3;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #fbd1e3;
+}
+
+.click {
+    margin-top: -10px;
+}
+
+a {
+    color: #fbd1e3;
+    text-decoration: underline;
+}
+
+/* Scents list */
+.scents {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.scents-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.scents-img-container img {
+    object-fit: cover;
+    border: 2px solid #51193b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    height: 225px;
+    border-radius: 100px;
+    max-width: 100%;
+}
+
+/* Section titles */
+.vanilla, .rosemary, .lemon, .lavender {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Galleries */
+.candle-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.candle-gallery img {
+    vertical-align: top;
+    border: 2px solid #511930;
+    border-radius: 8px;
+    padding: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Footer & Embeds */
+footer {
+    margin-top: 40px;
+    border-top: 1px solid #2b1118;
+    padding-top: 20px;
+}
+
+.instagram {
+    color: #924d73;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #BDB2FF;
+    text-decoration: underline;
+}
+
+.frames {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.frames iframe {
+    max-width: 100%;
+}
+
+.quiz {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .slogan {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .introduction {
+        font-size: 18px;
+    }
+
+    .candle-gallery, .scents-img-container {
+        justify-content: center;
+    }
+
+    .candle-gallery img, .scents-img-container img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
